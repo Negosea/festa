@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite para Evento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            position: relative;
+            z-index: 1;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h2 {
+            color: #333;
+        }
+        .content p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer a {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('C:\Users\User\Desktop\Criação do Convite em HTML\foto_din.jpg');
+            background-size: cover;
+            background-position: center;
+            z-index: 0;
+            animation: moveBackground 20s linear infinite;
+        }
+        @keyframes moveBackground {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(-10px); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="header">
+            <h1>Convite para Evento</h1>
+        </div>
+        <div class="content">
+            <h2>Título do Evento</h2>
+            <p>Você está convidado(a) para participar do nosso evento especial!</p>
+            <p><strong>Data:</strong> 20 de Agosto de 2024</p>
+            <p><strong>Hora:</strong> 18:00</p>
+            <p><strong>Local:</strong> Rua dos Eventos, 123, Centro, Cidade</p>
+            <p>Venha e traga sua família e amigos para desfrutar de uma noite memorável.</p>
+        </div>
+        <div class="footer">
+            <a href="#">Confirmar Presença</a>
+        </div>
+    </div>
+</body>
+</html>
